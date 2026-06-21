@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZetaPrime Notebook Pro X15 - Product Page</title>
+    <style>
+        :root {
+            --primary-color: #00d2ff; /* Cyber Blue */
+            --secondary-color: #008cba;
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        .product-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .product-visual {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product-visual img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #eef2f5;
+        }
+
+        .product-info {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: #f9fbff;
+            color: #555;
+            width: 35%;
+            font-weight: 600;
+        }
+
+        .price-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .buy-btn {
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 4px 6px rgba(0, 210, 255, 0.3);
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .buy-btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .buy-btn:active {
+            transform: scale(0.98);
+        }
+
+        #confirmation-msg {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>ZetaPrime Notebook Pro X15</h1>
+        </div>
+
+        <div class="product-layout">
+            <div class="product-visual">
+                <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=800&q=80" alt="ZetaPrime Notebook Pro X15 Generic Presentation">
+                
+                <div class="price-container">
+                    <div class="price">€949.00</div>
+                    <button class="buy-btn" onclick="purchaseProduct()">Buy Now</button>
+                    <div id="confirmation-msg">
+                        ✅ Success! The ZetaPrime Notebook Pro X15 configuration has been added to your cart. Proceeding to secure checkout...
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h2>Product Specifications</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th style="width: 65%;">Specification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Model</th>
+                            <td>ZetaPrime Notebook Pro X15 (fictitious name)</td>
+                        </tr>
+                        <tr>
+                            <th>Destiny</th>
+                            <td>Programming, Big Data</td>
+                        </tr>
+                        <tr>
+                            <th>Color</th>
+                            <td>Cyber Blue (boy's color)</td>
+                        </tr>
+                        <tr>
+                            <th>Processor</th>
+                            <td>AMD Ryzen 7 7735HS (8 cores / 16 threads, max. 4.75 GHz)</td>
+                        </tr>
+                        <tr>
+                            <th>RAM</th>
+                            <td>32 GB DDR5</td>
+                        </tr>
+                        <tr>
+                            <th>Storage</th>
+                            <td>1 TB PCIe 4.0 NVMe SSD</td>
+                        </tr>
+                        <tr>
+                            <th>Display</th>
+                            <td>15.6" FHD IPS, 100% sRGB, 300 nits</td>
+                        </tr>
+                        <tr>
+                            <th>Graphics</th>
+                            <td>Integrated AMD Radeon 680M</td>
+                        </tr>
+                        <tr>
+                            <th>Cooling</th>
+                            <td>(Unique) FrostShield system with cryogenic gel</td>
+                        </tr>
+                        <tr>
+                            <th>Special equipment</th>
+                            <td>Hardware switch "FocusMode"</td>
+                        </tr>
+                        <tr>
+                            <th>Connectivity</th>
+                            <td>Wi-Fi 6E, Bluetooth 5.2, 2x USB-C, 1x HDMI 2.1</td>
+                        </tr>
+                        <tr>
+                            <th>Battery and endurance</th>
+                            <td>55 Wh, real endurance: 12.4 hours</td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td>1.38 kg</td>
+                        </tr>
+                        <tr>
+                            <th>Price</th>
+                            <td>€949.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function purchaseProduct() {
+            const btn = document.querySelector('.buy-btn');
+            const msg = document.getElementById('confirmation-msg');
+            
+            btn.innerText = "Processing...";
+            btn.style.backgroundColor = "#aaa";
+            btn.disabled = true;
+
+            setTimeout(() => {
+                msg.style.display = "block";
+                btn.innerText = "Added to Cart";
+                btn.style.backgroundColor = "#28a745"; 
+            }, 800);
+        }
+    </script>
+
+</body>
+</html>
